@@ -1,0 +1,14 @@
+/bypass/.
+//bypass//
+/./bypass/..
+/;/bypass
+/.;/bypass
+//;//bypass
+/bypass..;/
+/%2e/bypass
+\bypass
+/BYPASS
+\/bypass
+/%2f/bypass
+/%2fbypass
+%2f/bypass

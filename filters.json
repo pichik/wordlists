@@ -1,0 +1,83 @@
+[
+  {
+ "Name": "parameters",
+ "RegexPart": 3,
+ "RegexString":"<input ([^>]*?)(name|id)=.([^\"']*)"
+},
+{
+ "Name": "ids",
+ "RegexPart": 0,
+ "RegexString":"[a-zA-Z]*(_i|-i|uu?i|I)d"
+},
+{
+ "Name": "admin",
+ "RegexPart": 0,
+ "RegexString":"(.{0,100}admin.{0,100})",
+ "Highlight": "admin"
+},
+{
+ "Name": "users",
+ "RegexPart": 0,
+ "RegexString":"[a-zA-Z0-9_-]*(u|U)ser[sA-Z0-9\\[_-][a-zA-Z0-9_\\[\\]-]*"
+},
+{
+ "Name": "elements",
+ "RegexPart": 0,
+ "RegexString":"var [a-zA-Z0-9_-]* = document\\.getElementBy(Id|Name)\\([^\\)]*\\)"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"href=(\"|')\\s*(.*?)\\s*(\"|')"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"src=(\"|')\\s*(.*?)\\s*(\"|')"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"( |'|\"|^)\\s*(https?://.*?)\\s*( |'|\"|$|\\)|\\()"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"url: ?(\"|')([^\"']*)(\"|')"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"(?i)url: ?(\"|')(\\s*(.*?)\\s*)(\"|')"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"(\"|'|^)\\s*(/[a-zA-Z0-9_\\.\\?/\\&\\=\\{\\}%#@\\:\\+-]*?)\\s*(\"|'|$)"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"<form ([^>]*?)action=.([^\"']*)"
+},
+{
+ "Name": "urls",
+ "RegexPart": 5,
+ "RegexString":"open\\((\"|')(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'), ?(\"|')\\s*(.*?)\\s*(\"|')"
+},
+{
+ "Name": "urls",
+ "RegexPart": 1,
+ "RegexString":"<loc>([^<]*?)</loc>"
+},
+{
+ "Name": "urls",
+ "RegexPart": 2,
+ "RegexString":"(dis)?allow: ([^ \\n$]*)"
+},
+{
+ "Name": "urls",
+ "RegexPart": 1,
+ "RegexString":"(https?://[-_a-zA-Z0-9\\.\\?\\&\\=%/:]+)"
+}
+]
