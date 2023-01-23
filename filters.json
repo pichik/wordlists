@@ -20,6 +20,11 @@
  "RegexPart": 0,
  "RegexString":"[a-zA-Z0-9_-]*(u|U)ser[sA-Z0-9\\[_-][a-zA-Z0-9_\\[\\]-]*"
 },
+  {
+ "Name": "customers",
+ "RegexPart": 0,
+ "RegexString":"[a-zA-Z0-9_-]*(c|C)ustomer[sA-Z0-9\\[_-][a-zA-Z0-9_\\[\\]-]*"
+},
 {
  "Name": "elements",
  "RegexPart": 0,
