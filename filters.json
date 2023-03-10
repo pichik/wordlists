@@ -7,7 +7,7 @@
   {
  "Name": "templates",
  "RegexPart": 0,
- "RegexString":"\\{\\{[^\\}]*\\}\\}"
+ "RegexString":"{{[^}]*}}"
 },
 {
  "Name": "ids",
