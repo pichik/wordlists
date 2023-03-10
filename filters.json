@@ -4,6 +4,11 @@
  "RegexPart": 3,
  "RegexString":"<input ([^>]*?)(name|id)=.([^\"']*)"
 },
+  {
+ "Name": "templates",
+ "RegexPart": 0,
+ "RegexString":"\{\{[^\}]*\}\}"
+},
 {
  "Name": "ids",
  "RegexPart": 0,
