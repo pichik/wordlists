@@ -12,3 +12,6 @@
 /%2f/bypass
 /%2fbypass
 %2f/bypass
+/%252e**/bypass
+/bypass.json
+/%ef%bc%8fbypass
