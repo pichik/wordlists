@@ -37,8 +37,8 @@
 },
 {
  "Name": "urls",
- "RegexPart": 2,
- "RegexString":"href=(\"|')\\s*(.*?)\\s*(\"|')"
+ "RegexPart": 3,
+ "RegexString":"href(=|:)(\"|')\\s*(.*?)\\s*(\"|')"
 },
 {
  "Name": "urls",
