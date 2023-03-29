@@ -63,7 +63,7 @@
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(\"|'|^|\\`)\\s*(/[a-zA-Z0-9_\\.\\?/\\&\\=\\$\\{\\}%#@\\:\\+-]*?)\\s*(\"|'|\\`|$)"
+ "RegexString":"(\"|'|^|`)\\s*(/[a-zA-Z0-9_\\.\\?/\\&\\=\\$\\{\\}%#@\\:\\+-]*?)\\s*(\"|'|`|$)"
 },
 {
  "Name": "urls",
@@ -74,6 +74,11 @@
  "Name": "urls",
  "RegexPart": 5,
  "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*(\"|')\\s*(.*?)\\s*(\"|')"
+},
+  {
+ "Name": "urls",
+ "RegexPart": 3,
+ "RegexString":"(post|get|put|patch|delete|options|head)\\s*\(\\s*(\"|'|`)\\s*([^\"|'|`]*)"
 },
 {
  "Name": "urls",
