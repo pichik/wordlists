@@ -33,47 +33,47 @@
 {
  "Name": "elements",
  "RegexPart": 0,
- "RegexString":"var [a-zA-Z0-9_-]* = document\\.getElementBy(Id|Name)\\([^\\)]*\\)"
+ "RegexString":"var [a-zA-Z0-9_-]*\\s*=\\s*document\\.getElementBy(Id|Name)\\([^\\)]*\\)"
 },
 {
  "Name": "urls",
  "RegexPart": 3,
- "RegexString":"href(=|:)(\"|')\\s*(.*?)\\s*(\"|')"
+ "RegexString":"href(=|:)(\"|'|`)\\s*(.*?)\\s*(\"|'|`)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"src=(\"|')\\s*(.*?)\\s*(\"|')"
+ "RegexString":"src=(\"|'|`)\\s*(.*?)\\s*(\"|'|`)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"( |'|\"|^)\\s*(https?://.*?)\\s*( |'|\"|$|\\)|\\()"
+ "RegexString":"( |'|\"|`|^)\\s*(https?://.*?)\\s*( |'|\"|`|$|\\)|\\()"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"url: ?(\"|')([^\"']*)(\"|')"
+ "RegexString":"url:\\s*(\"|'|`)([^\"'`]*)(\"|'|`)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(?i)url: ?(\"|')(\\s*(.*?)\\s*)(\"|')"
+ "RegexString":"(?i)url:\\s*(\"|'|`)(\\s*(.*?)\\s*)(\"|'|`)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(\"|'|^)\\s*(/[a-zA-Z0-9_\\.\\?/\\&\\=\\{\\}%#@\\:\\+-]*?)\\s*(\"|'|$)"
+ "RegexString":"(\"|'|^|`)\\s*(/[a-zA-Z0-9_\\.\\?/\\&\\=\\$\\{\\}%#@\\:\\+-]*?)\\s*(\"|'|`|$)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"<form ([^>]*?)action=.([^\"']*)"
+ "RegexString":"<form ([^>]*?)action=.([^\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 5,
- "RegexString":"open\\((\"|')(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'), ?(\"|')\\s*(.*?)\\s*(\"|')"
+ "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*(\"|')\\s*(.*?)\\s*(\"|')"
 },
 {
  "Name": "urls",
@@ -83,11 +83,11 @@
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(dis)?allow: ([^ \\n$]*)"
+ "RegexString":"(dis)?allow: ([^\\s\\n$]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 1,
- "RegexString":"(https?://[-_a-zA-Z0-9\\.\\?\\&\\=%/:]+)"
+ "RegexString":"(https?://[-_a-zA-Z0-9\\$\\{\\}\\.\\?\\&\\=%/:]+)"
 }
 ]
