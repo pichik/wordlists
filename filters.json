@@ -63,7 +63,7 @@
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(\"|'|^|`)\\s*(/([^\"|'|`]*)"
+ "RegexString":"(\"|'|^|`)\\s*(/[^\"|'|`]*)"
 },
 {
  "Name": "urls",
