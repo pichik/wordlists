@@ -78,7 +78,7 @@
   {
  "Name": "urls",
  "RegexPart": 3,
- "RegexString":"(post|get|put|patch|delete|options|head)\\s*\(\\s*(\"|'|`)\\s*([^\"|'|`]*)"
+ "RegexString":"(post|get|put|patch|delete|options|head)\\s*\\(\\s*(\"|'|`)\\s*([^\"|'|`]*)"
 },
 {
  "Name": "urls",
