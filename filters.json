@@ -38,32 +38,27 @@
 {
  "Name": "urls",
  "RegexPart": 3,
- "RegexString":"href(=|:)(\"|'|`)([^\"|'|`]*)"
+ "RegexString":"href(=|:)(\"|'|`)([^\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"src=(\"|'|`)([^\"|'|`]*)"
+ "RegexString":"src=(\"|'|`)([^\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"( |'|\"|`|^)\\s*(https?://[^ |'|\"|`|$|\\)|\\(]*)"
+ "RegexString":"( |'|\"|`|^)\\s*(https?://[^ '\"`$\\)\\(]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"url:\\s*(\"|'|`)([^\"'`]*)"
+ "RegexString":"(?i)url:\\s*(\"|'|`)([^\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(?i)url:\\s*(\"|'|`)([^\"|'|`]*)"
-},
-{
- "Name": "urls",
- "RegexPart": 2,
- "RegexString":"(\"|'|^|`)\\s*(/[^\"|'|`]*)"
+ "RegexString":"(\"|'|^|`)\\s*(/[^\"'`]*)"
 },
 {
  "Name": "urls",
@@ -73,12 +68,12 @@
 {
  "Name": "urls",
  "RegexPart": 5,
- "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*(\"|'|`)([^\"|'|`]*)"
+ "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*(\"|'|`)([^\"'`]*)"
 },
   {
  "Name": "urls",
  "RegexPart": 3,
- "RegexString":"(post|get|put|patch|delete|options|head)\\s*\\(\\s*(\"|'|`)\\s*([^\"|'|`]*)"
+ "RegexString":"(post|get|put|patch|delete|options|head)\\s*\\(\\s*(\"|'|`)\\s*([^\"'`]*)"
 },
 {
  "Name": "urls",
