@@ -68,7 +68,7 @@
 {
  "Name": "urls",
  "RegexPart": 4,
- "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`)([^\"'`]*)"
+ "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*\"([^\"'`]*)"
 },
   {
  "Name": "urls",
