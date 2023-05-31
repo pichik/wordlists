@@ -38,17 +38,17 @@
 {
  "Name": "urls",
  "RegexPart": 3,
- "RegexString":"href(=|:)(\"|'|`)([^\"'`]*)"
+ "RegexString":"href(=|:)(\"|'|`)([^\\\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"src=(\"|'|`)([^\"'`]*)"
+ "RegexString":"src=(\"|'|`)([^\\\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"( |'|\"|`|^)\\s*(https?://[^ '\"`$\\)\\(]*)"
+ "RegexString":"( |'|\"|`|^)\\s*(https?://[^ '\"`$\\)\\(\\]*)"
 },
 {
  "Name": "urls",
