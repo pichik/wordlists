@@ -48,32 +48,32 @@
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"( |'|\"|`|^)\\s*(https?://[^ '\"`$\\)\\(\\\]*)"
+ "RegexString":"( |'|\"|`|^)\\s*(https?://[^ '\"`$\\)\\\\(]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(?i)url:\\s*(\"|'|`)([^\\\\"'`]*)"
+ "RegexString":"(?i)url:\\s*(\"|'|`)([^\\\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"(\"|'|^|`)\\s*(/[^\\\\"'`>]*)"
+ "RegexString":"(\"|'|^|`)\\s*(/[^\\\"'`>]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 2,
- "RegexString":"<form ([^>]*?)action=.([^\\\\"'`]*)"
+ "RegexString":"<form ([^>]*?)action=.([^\\\"'`]*)"
 },
 {
  "Name": "urls",
  "RegexPart": 4,
- "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*\"([^\\\\"'`]*)"
+ "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*\"([^\\\"'`]*)"
 },
   {
  "Name": "urls",
  "RegexPart": 3,
- "RegexString":"request\\.(post|get|put|patch|delete|options|head)\\s*\\(\\s*(\"|'|`)([^\\\\"'`]*)"
+ "RegexString":"request\\.(post|get|put|patch|delete|options|head)\\s*\\(\\s*(\"|'|`)([^\\\"'`]*)"
 },
 {
  "Name": "urls",
