@@ -74,3 +74,4 @@ upgrade
 upload
 validate
 verify
+view
