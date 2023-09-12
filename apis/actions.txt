@@ -53,6 +53,7 @@ multi
 multiply
 options
 post
+print
 produce
 promote
 quit
