@@ -67,6 +67,7 @@ history
 image
 images
 info
+invoice
 item
 items
 job
