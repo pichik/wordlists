@@ -64,3 +64,5 @@ resetUrl
 forward
 photoUrl
 arrived
+actionUrl
+action_url
