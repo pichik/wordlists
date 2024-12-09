@@ -15,3 +15,5 @@
 /%252e**/bypass
 /bypass.json
 /%ef%bc%8fbypass
+/bypass%2f
+/bypass%252f
