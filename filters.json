@@ -58,7 +58,7 @@
  "Type": "urls",
  "Name": "http",
  "RegexPart": 1,
- "RegexString":"[ '\"`^]\\s*(https?://[^ '\"`$\\)\\\\(]*)"
+ "RegexString":"[ '\"`^]\\s*(https?://[^ '\"`\\)\\(]*)"
 },
 {
  "Type": "urls",
