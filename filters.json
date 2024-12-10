@@ -1,93 +1,135 @@
 [
   {
+ "Type": "parameters",
  "Name": "parameters",
  "RegexPart": 3,
  "RegexString":"<input ([^>]*?)(name|id)=.([^\"']*)"
 },
   {
+ "Type": "templates",
  "Name": "templates",
  "RegexPart": 0,
  "RegexString":"\\{\\{[^\\}]*\\}\\}"
 },
 {
+ "Type": "ids",
  "Name": "ids",
  "RegexPart": 0,
  "RegexString":"[a-zA-Z\\._-]*(_i|-i|uu?i|I)d"
 },
 {
+ "Type": "admin",
  "Name": "admin",
  "RegexPart": 0,
  "RegexString":"(.{0,100}admin.{0,100})",
  "Highlight": "admin"
 },
 {
+ "Type": "users",
  "Name": "users",
  "RegexPart": 0,
  "RegexString":"[a-zA-Z0-9\\._-]*(u|U)ser[sA-Z0-9\\.\\[_-][a-zA-Z0-9_\\.\\[\\]-]*"
 },
   {
+ "Type": "customers",
  "Name": "customers",
  "RegexPart": 0,
  "RegexString":"[a-zA-Z0-9\\._-]*(c|C)ustomer[sA-Z0-9\\.\\[_-][a-zA-Z0-9_\\.\\[\\]-]*"
 },
 {
+ "Type": "elements",
  "Name": "elements",
  "RegexPart": 0,
  "RegexString":"var [a-zA-Z0-9_-]*\\s*=\\s*document\\.getElementBy(Id|Name)\\([^\\)]*\\)"
 },
 {
- "Name": "urls",
- "RegexPart": 3,
- "RegexString":"href(=|:)(\"|'|`)([^\\\"'`]*)"
+ "Type": "urls",
+ "Name": "href",
+ "RegexPart": 1,
+ "RegexString":"href[=:][\"'`]([^\"'`]*)"
 },
 {
- "Name": "urls",
+ "Type": "urls",
+ "Name": "src",
+ "RegexPart": 1,
+ "RegexString":"src=[\"'`]([^\"'`]*)"
+},
+{
+ "Type": "urls",
+ "Name": "http",
+ "RegexPart": 1,
+ "RegexString":"[ '\"`^]\\s*(https?://[^ '\"`$\\)\\\\(]*)"
+},
+{
+ "Type": "urls",
+ "Name": "url",
+ "RegexPart": 1,
+ "RegexString":"(?i)url:\\s*[\"'`]([^\"'`]*)"
+},
+{
+ "Type": "urls",
+ "Name": "slashstart",
+ "RegexPart": 1,
+ "RegexString":"[\"'^`]\\s*(/[^\"'`>]*)"
+},
+{
+ "Type": "urls",
+ "Name": "action",
  "RegexPart": 2,
- "RegexString":"src=(\"|'|`)([^\\\"'`]*)"
+ "RegexString":"<form ([^>]*?)action=.([^\"'`]*)"
 },
 {
- "Name": "urls",
+  "Type": "urls",
+ "Name": "open",
  "RegexPart": 2,
- "RegexString":"( |'|\"|`|^)\\s*(https?://[^ '\"`$\\)\\\\(]*)"
-},
-{
- "Name": "urls",
- "RegexPart": 2,
- "RegexString":"(?i)url:\\s*(\"|'|`)([^\\\"'`]*)"
-},
-{
- "Name": "urls",
- "RegexPart": 2,
- "RegexString":"(\"|'|^|`)\\s*(/[^\\\"'`>]*)"
-},
-{
- "Name": "urls",
- "RegexPart": 2,
- "RegexString":"<form ([^>]*?)action=.([^\\\"'`]*)"
-},
-{
- "Name": "urls",
- "RegexPart": 4,
- "RegexString":"open\\((\"|'|`)(GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)(\"|'|`),\\s*\"([^\\\"'`]*)"
+ "RegexString":"open\\([\"'`](GET|POST|PUT|PATCH|DELETE|OPTIONS|HEAD)[\"'`],\\s*\"([^\"'`]*)"
 },
   {
- "Name": "urls",
- "RegexPart": 3,
- "RegexString":"request\\.(post|get|put|patch|delete|options|head)\\s*\\(\\s*(\"|'|`)([^\\\"'`]*)"
+    "Type": "urls",
+ "Name": "request",
+ "RegexPart": 2,
+ "RegexString":"request\\.(post|get|put|patch|delete|options|head)\\s*\\(\\s*[\"'`]([^\"'`]*)"
 },
 {
- "Name": "urls",
+  "Type": "urls",
+ "Name": "sitemap",
  "RegexPart": 1,
  "RegexString":"<loc>([^<]*?)</loc>"
 },
 {
- "Name": "urls",
+  "Type": "urls",
+ "Name": "robots",
  "RegexPart": 2,
  "RegexString":"(dis)?allow: ([^\\s\\n$]*)"
 },
 {
- "Name": "urls",
+  "Type": "urls",
+ "Name": "http2",
  "RegexPart": 1,
  "RegexString":"(https?://[-_a-zA-Z0-9\\$\\{\\}\\.\\?\\&\\=%/:]+)"
+},
+{
+  "Type": "urls",
+ "Name": "jsfile",
+ "RegexPart": 1,
+ "RegexString":"([-_a-z0-9/\\.:]*\\.js[^a-z])"
+},
+{
+  "Type": "urls",
+ "Name": "path",
+ "RegexPart": 1,
+ "RegexString":"path: ?\"([^\"]*)"
+},
+{
+  "Type": "urls",
+ "Name": "slashany",
+ "RegexPart": 1,
+ "RegexString":"\"(([a-z0-9_\\-\\.]*/[a-z0-9_\\-\\.\\?\\=\\&%\\$\\{\\}]*){2,})\""
+},
+{
+  "Type": "urls",
+ "Name": "templates",
+ "RegexPart": 1,
+ "RegexString":"`((?=[^`]*/)[a-z0-9_\\-/\\$\\{\\}\\?\\&=\\.]*)`"
 }
 ]
