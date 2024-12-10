@@ -52,7 +52,7 @@
  "Type": "urls",
  "Name": "src",
  "RegexPart": 1,
- "RegexString":"src=[\\\"'\\`]([^\\\"'\\`]*)"
+ "RegexString":"src=[\"'`]([^\"'`]*)"
 },
 {
  "Type": "urls",
