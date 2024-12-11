@@ -112,7 +112,7 @@
   "Type": "urls",
  "Name": "jsfile",
  "RegexPart": 1,
- "RegexString":"([-_a-z0-9/\\.:]*\\.js[^a-z])"
+ "RegexString":"([-_a-z0-9/\\.:]*\\.js)[^a-z]"
 },
 {
   "Type": "urls",
