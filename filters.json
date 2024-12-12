@@ -112,7 +112,7 @@
   "Type": "urls",
  "Name": "jsfile",
  "RegexPart": 1,
- "RegexString":"([-_a-z0-9/\\.:]*\\.js)[^a-z]"
+ "RegexString":"([-_a-zA-Z0-9/\\.:]*\\.js)[^a-zA-Z]"
 },
 {
   "Type": "urls",
@@ -124,12 +124,12 @@
   "Type": "urls",
  "Name": "slashany",
  "RegexPart": 1,
- "RegexString":"\"(([a-z0-9_\\-\\.]*/[a-z0-9_\\-\\.\\?\\=\\&%\\$\\{\\}]*){2,})\""
+ "RegexString":"\"(([a-zA-Z0-9_\\-\\.]*/[a-zA-Z0-9_\\-\\.\\?\\=\\&%\\$\\{\\}]*){2,})\""
 },
 {
   "Type": "urls",
  "Name": "templates",
  "RegexPart": 1,
- "RegexString":"`([a-z0-9_\\-/\\$\\{\\}\\?\\&=\\.]*/[a-z0-9_\\-/\\$\\{\\}\\?\\&=\\.]*)`"
+ "RegexString":"`([a-zA-Z0-9_\\-/\\$\\{\\}\\?\\&=\\.]*/[a-zA-Z0-9_\\-/\\$\\{\\}\\?\\&=\\.]*)`"
 }
 ]
